@@ -15,7 +15,7 @@ let router = require('./app/routers/proyecto.router.js');
 
 const cors = require('cors')
 const corsOptions = {
-  origin: ['http://localhost:3000','http://localhost:4200','https://gestion-de-usuarios.onrender.com'],
+  origin: ['http://localhost:3000','http://localhost:4200','https://examenfinalfront.onrender.com'],
   optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions));
