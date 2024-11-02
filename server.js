@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 const db = require('./app/config/db.config.js');
   
 // Aqui lo que hace es validar si la tabla existe.
-db.sequelize.sync({force: true}).then(() => {
+db.sequelize.sync({force: false}).then(() => {
   console.log('Drop and Resync with { force: false }');
 }); 
 
