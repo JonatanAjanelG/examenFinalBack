@@ -1,7 +1,7 @@
 let express = require('express');
 let router = express.Router();
 
-const Proyecto = require('../controllers/proyecto.controller.js'); // Asegúrate de que el controlador esté en esta ruta
+const Proyecto = require('../controllers/proyecto.controller.js');
 
 router.post('/api/proyecto', Proyecto.create);
 router.get('/api/proyectos', Proyecto.retrieveAllProyectos);
